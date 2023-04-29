@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA3628C2-767A-4867-9FCE-44750E386617}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UPanda</RootNamespace>
+    <AssemblyName>UPanda</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Center.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Center.Designer.cs">
+      <DependentUpon>Center.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CService.Designer.cs">
+      <DependentUpon>CService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery_Product.Designer.cs">
+      <DependentUpon>Delivery_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imformcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imformcs.Designer.cs">
+      <DependentUpon>Imformcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pass.Designer.cs">
+      <DependentUpon>Pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Check.Designer.cs">
+      <DependentUpon>Product_Check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Choose.Designer.cs">
+      <DependentUpon>Product_Choose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResMenu.Designer.cs">
+      <DependentUpon>ResMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Take_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Take_Product.Designer.cs">
+      <DependentUpon>Take_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPandaer_mail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPandaer_mail.Designer.cs">
+      <DependentUpon>UPandaer_mail.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Center.resx">
+      <DependentUpon>Center.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CService.resx">
+      <DependentUpon>CService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery_Product.resx">
+      <DependentUpon>Delivery_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imformcs.resx">
+      <DependentUpon>Imformcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pass.resx">
+      <DependentUpon>Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Check.resx">
+      <DependentUpon>Product_Check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Choose.resx">
+      <DependentUpon>Product_Choose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResMenu.resx">
+      <DependentUpon>ResMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Take_Product.resx">
+      <DependentUpon>Take_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPandaer_mail.resx">
+      <DependentUpon>UPandaer_mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register.jpg" />
+    <None Include="Resources\Register1.jpg" />
+    <None Include="Resources\pngtree-cartoon-hand-painted-food-simple-and-fresh-image_179054.jpg" />
+    <None Include="Resources\圖片1.jpg" />
+    <None Include="Resources\CService.jpg" />
+    <None Include="Resources\2349.jpg_wh860.jpg" />
+    <None Include="Resources\圖片11.jpg" />
+    <None Include="Resources\back1.jpg" />
+    <None Include="Resources\back11.jpg" />
+    <None Include="Resources\back2.jfif" />
+    <None Include="Resources\107_1.jpg" />
+    <None Include="Resources\107_2.jpg" />
+    <None Include="Resources\107_3.jpg" />
+    <None Include="Resources\107_4.jpg" />
+    <None Include="Resources\112_1.png" />
+    <None Include="Resources\112_2.png" />
+    <None Include="Resources\112_3.png" />
+    <None Include="Resources\112_4.png" />
+    <None Include="Resources\112_21.png" />
+    <None Include="Resources\112_11.png" />
+    <None Include="Resources\112_5.png" />
+    <None Include="Resources\圖片12.jpg" />
+    <None Include="Resources\圖片.jpg" />
+    <None Include="Resources\112_12.png" />
+    <None Include="Resources\圖片2.jpg" />
+    <None Include="Resources\112_31.png" />
+    <None Include="Resources\112_51.png" />
+    <None Include="Resources\112_6.png" />
+    <None Include="Resources\112_7.png" />
+    <None Include="Resources\107_5.jpeg" />
+    <None Include="Resources\107_6.jpg" />
+    <None Include="Resources\107_11.jpg" />
+    <None Include="Resources\圖片3.jpg" />
+    <None Include="Resources\001.jpg" />
+    <None Include="Resources\圖片13.jpg" />
+    <None Include="Resources\圖片14.jpg" />
+    <None Include="Resources\圖片1.png" />
+    <None Include="Resources\PandaMe.png" />
+    <None Include="Resources\PandaMe1.png" />
+    <Content Include="upDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="upDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>upDB.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 與 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
